@@ -46,29 +46,29 @@ const { NotImplementedError } = require('../extensions/index.js');
 // 	  '  val_plumwood',
 // 	]), should return 'BDETV');
 function createDreamTeam(members) {
-  throw new NotImplementedError('Not implemented');
+//   throw new NotImplementedError('Not implemented');
   // remove line with error and write your code here
-//   if(!Array.isArray(members)) {
-// 	return false;
-//   }
-//   let result = '';
+  if(!Array.isArray(members)) {
+	return false;
+  }
+  let result = '';
 	 
-//   for (let i = 0; i < members.length; i++) {
+  for (let i = 0; i < members.length; i++) {
 
-// 	  if (typeof members[i] === 'string') {
-// 		if (members[i].includes(' ')) {
-// 			members[i] = members[i].replace(/\s/g, '');
-// 			result+= members[i][0].toUpperCase();
-// 		}
-// 		else {
-// 		  result += members[i][0].toUpperCase();
-// 		}
-// 	  }
-// 		else {
-// 			continue
-// 	}
-//   }
-//   return result.split('').sort().join('');
+	  if (typeof members[i] === 'string') {
+		if (members[i].includes(' ')) {
+			members[i] = members[i].replace(/\s/g, '');
+			result+= members[i][0].toUpperCase();
+		}
+		else {
+		  result += members[i][0].toUpperCase();
+		}
+	  }
+		else {
+			continue
+	}
+  }
+  return result.split('').sort().join('');
 }
 
 module.exports = {

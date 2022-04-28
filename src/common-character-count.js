@@ -18,19 +18,19 @@ const { NotImplementedError } = require('../extensions/index.js');
 // Common character count
 //        should return the number of common characters between the given strings:
 function getCommonCharacterCount( s1, s2 ) {
-  throw new NotImplementedError('Not implemented');
+//   throw new NotImplementedError('Not implemented');
   // remove line with error and write your code here
-//   let result=''
-//   ar1 = s1.split('');
-//   ar2 = s2.split('');
+  let result=''
+  ar1 = s1.split('');
+  ar2 = s2.split('');
   
-//   ar1.forEach(function(char) {
-// 	if (ar2.includes(char)) {
-// 	  result += char;
-// 	  ar2.splice(ar2.indexOf(char), 1);
-// 	}
-//   });
-//   return result.length;
+  ar1.forEach(function(char) {
+	if (ar2.includes(char)) {
+	  result += char;
+	  ar2.splice(ar2.indexOf(char), 1);
+	}
+  });
+  return result.length;
 }
 
 module.exports = {
